@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.8/angular-material.css">
+    <title>Angular To-do</title>
+</head>
+<body ng-controller="mainCtrl as vm">
+    
+    <ui-view></ui-view>
+
+    
+    <!-- angularjs material cdn links -->
+    
+
+   <!--  firebase cdn links -->
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-app.js" integrity="sha512-BGba5na4KpjxEWMOuUzaJ5esHUMfU/qotd2zv5sugqedOx3+oHFaeieOzFQs3COa2sq6BAksRirtAFztryVZFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-auth.min.js" integrity="sha512-GAEvFso2oksY5JFkHlrfLhZgAV6aL48qxnbxPnbKnNLeG/XsU/c0lh/g9gocZ2RtbRx6VDTqspPEy9ixWvbfzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-firestore.min.js" integrity="sha512-5mAQjqpXMGEvRH48JD3KJC750vTeD+83f1UxnRt1Ur6enn77FrK+MqIU0dkUn7judeBsjsv6xLHC//YFnRQVAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+   <!-- Include additional Firebase services you need, e.g., Firebase Database, Firebase Storage, etc. -->
+
+   <!-- angularjs cdn links -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.28/angular-ui-router.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.min.js" integrity="sha512-8ZDKhABrbEX/eIybbe5W4gM3qP6ABDDHrb9c/+HoqI6jT3vDIxmNSlEsw1DBd/J/dmLDs5Ueg2WWYLqpq0/U8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-aria.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.21/angular-material.min.js"></script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+    <script src="components/todo-page/todo-page.component.js"></script>
+    <script src="components/login-page/login-page.component.js"></script>
+    <script src="components/loader/loader.component.js"></script>
+    <script src="components/signup-page/signup-page.component.js"></script>
+</body>
+</html>

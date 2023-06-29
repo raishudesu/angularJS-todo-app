@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="components/todo-page/todo-page.css">
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Todo App</a>
+      <md-button id="logoutBtn" class="md-raised md-accent" ng-click="vm.signOut()">Logout</md-button>
+    </div>
+</nav>
+<div class="main-container">
+    <div class="container">
+        <div class="upper">
+            <h1>To-do List</h1>
+        </div>
+        <div class="input-title">
+            <md-input-container>
+                <label>Add Todo</label>
+                <input type="text" ng-model="vm.title">
+            </md-input-container>
+            <md-button class="md-raised md-primary" ng-click="vm.addToList(vm.title)">Add</md-button>
+        </div> 
+        <div class="status-bar">
+            <h5>Task</h5>
+            <h5>Completed</h5>
+            <h5>Delete</h5>
+        </div>
+        <div class="items" ng-repeat="todo in vm.todos">
+            <h6>{{todo.title}}</h6>
+            <md-checkbox ng-model="item.checked" ng-change="vm.taskDone(todo.todoId, item.checked)" ng-checked="todo.checked"></md-checkbox>
+            <md-button class="md-raised md-accent md-warn" ng-click="vm.removeFromList(todo.todoId)">Delete</md-button>
+        </div>
+    </div>
+</div>

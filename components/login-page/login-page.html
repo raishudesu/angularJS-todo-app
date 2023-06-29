@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="components/login-page/login-page.css">
+<div class="container">
+  <div class="form-container">
+    <h1>Log in to Application</h1>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ng-model="vm.email">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" ng-model="vm.password">
+      </div>
+      <button type="submit" class="btn btn-primary" ng-click="vm.login()">Login</button>
+    </form>
+    <label>Doesn't have an account? <a ui-sref="signup">Sign Up</a></label>
+    <loader class="loader" ng-show="vm.loading"></loader>
+  </div>
+</div>
